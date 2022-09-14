@@ -37,10 +37,7 @@ function appendElements(number = 16) {
   for (let i = 0; i < number; i++){
     const div = document.createElement('div');
     div.setAttribute('style', 'width:30px; height:30px; outline:2px solid black; background-color:lightblue;');
-    div.addEventListener('mousedown', () => {
-      div.style.backgroundColor = 'lightpink';
-    })
-    div.addEventListener('mouseenter', () => {
+    div.addEventListener('mouseover', () => {
       div.style.backgroundColor = 'lightpink';
     })
     // container.addEventListener('click', () => {
